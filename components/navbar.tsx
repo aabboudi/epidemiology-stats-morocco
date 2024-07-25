@@ -28,7 +28,7 @@ export default function Navbar() {
         </Link>
         </div>
         <div>
-          <ThemeSwitch />
+          <div className="hidden lg:block"><ThemeSwitch /></div>
           <Sheet>
           <SheetTrigger asChild>
             <Button variant="outline" size="icon" className="lg:hidden">
@@ -53,6 +53,7 @@ export default function Navbar() {
             <Link href="#" className="text-lg font-medium hover:underline underline-offset-4" prefetch={false}>
               Contact
             </Link>
+            <ThemeSwitch />
             </div>
           </SheetContent>
         </Sheet>
