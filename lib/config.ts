@@ -2,25 +2,21 @@ export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
   metadata: {
-    title: "Brand",
+    title: "Epidemio",
     description: "Placeholder.",
-  },
-  callToAction: {
-    label: "We're Hiring!",
-    href: "/openings",
   },
   navItems: [
     {
-      label: "About",
-      href: "/about",
+      label: "Data",
+      href: "/data",
     },
     {
-      label: "Newsroom",
-      href: "/newsroom",
+      label: "Research",
+      href: "/research",
     },
     {
-      label: "Capabilities",
-      href: "/capabilities",
+      label: "Team",
+      href: "/team",
     },
     {
       label: "Contact",

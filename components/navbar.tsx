@@ -37,12 +37,12 @@ export default function Navbar() {
               <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
               <path d="M2 12h20" />
             </svg>
-            <span className="font-bold text-xl">Brand</span>
+            <span className="font-bold text-xl">epidemio.ma</span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-4">
             <NavigationMenu>
-              <NavigationMenuList className="gap-4">
+              <NavigationMenuList className="gap-8">
                 {siteConfig.navItems.map(
                   (item: { label: string; href: string }, index: number) => (
                     <NavigationMenuItem key={index}>
@@ -57,11 +57,6 @@ export default function Navbar() {
                 )}
               </NavigationMenuList>
             </NavigationMenu>
-            <Button asChild className="w-full">
-              <Link href={siteConfig.callToAction.href}>
-                {siteConfig.callToAction.label}
-              </Link>
-            </Button>
           </div>
 
           <div className="md:hidden">
@@ -100,11 +95,6 @@ export default function Navbar() {
             ),
           )}
           <div className="px-3 py-2">
-            <Button asChild className="w-full">
-              <Link href={siteConfig.callToAction.href}>
-                {siteConfig.callToAction.label}
-              </Link>
-            </Button>
             <ThemeSwitch />
           </div>
         </div>
